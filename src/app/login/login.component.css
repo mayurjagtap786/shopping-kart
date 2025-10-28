@@ -1,0 +1,26 @@
+
+.ng-touched .invalid-feedback{
+    display: block;
+}
+
+
+
+.alert {
+  transition: opacity 0.6s ease-out;
+}
+
+.error-message{
+    color: var(--fc-form-invalid-color);
+    font-size: .875em;
+    margin-top: .25rem;
+    width: 100%;    
+}
+
+.form-control.ng-invalid.ng-touched {
+     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23db3030'%3E%3Ccircle cx='6' cy='6' r='4.5'/%3E%3Cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3E%3Ccircle cx='6' cy='8.2' r='.6' fill='%23db3030' stroke='none'/%3E%3C/svg%3E");
+    background-position: right calc(.4em + .275rem) center;
+    background-repeat: no-repeat;
+    background-size: calc(.8em + .55rem) calc(.8em + .55rem);
+    border-color: var(--fc-form-invalid-border-color);
+    padding-right: calc(1.6em + 1.1rem)
+}
